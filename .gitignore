@@ -1,0 +1,7 @@
+# Temporary extraction files
+extracted_*.jpeg
+extracted_*.jpg
+extracted_*.png
+*.tmp
+.DS_Store
+Thumbs.db

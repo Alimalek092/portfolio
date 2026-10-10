@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ali Malek • Founder, vidvisual & AI Product Builder</title>
+  <meta name="description" content="Official portfolio of Ali Malek — 16-year-old founder of vidvisual, AI product builder, and full-stack developer based in Ahmedabad, India.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+
+  <!-- Typography & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400;1,600;1,700&family=Oswald:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playball&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Fixed Interactive Cherry Blossom Canvas Background -->
+  <canvas id="interactive-canvas"></canvas>
+
+  <!-- Ambient Sky Softener overlay -->
+  <div class="aurora-glow"></div>
+
+  <!-- Main Scrollable Content Container -->
+  <div class="scroll-container">
+    
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="header-logo">
+        <span class="logo-badge">AM</span>
+        <div class="logo-text-group">
+          <span class="logo-text">ALI MALEK</span>
+          <span class="logo-sub">FOUNDER · VIDVISUAL</span>
+        </div>
+      </div>
+      
+      <nav class="header-nav">
+        <a href="#ventures" class="nav-link">Ventures</a>
+        <a href="#metrics" class="nav-link">Traction</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#resume" class="nav-link resume-nav-pill">
+          <i data-lucide="file-text"></i>
+          <span>Resume</span>
+        </a>
+        <a href="#contact" class="btn btn-secondary nav-cta">Let's Connect</a>
+      </nav>
+
+      <div class="header-tag">
+        <span class="pulse-dot-green"></span>
+        <span>AVAILABLE FOR PROJECTS</span>
+      </div>
+    </header>
+
+    <!-- HERO BANNER -->
+    <section class="hero-section" id="hero">
+      <div class="hero-left">
+        <div class="hero-badge-pill">
+          <span class="pulse-sparkle"><i data-lucide="sparkles"></i></span>
+          <span>16-YEAR-OLD FOUNDER · AI PRODUCT BUILDER</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="hero-serif-title">BUILDING IN PUBLIC</span>
+          <span class="hero-bold-title">ALI MALEK</span>
+        </h1>
+
+        <hr class="hero-divider">
+
+        <div class="hero-intro">
+          <h2>SIXTEEN-YEAR-OLD FOUNDER WHO SHIPS REAL PRODUCTS WHILE FINISHING CLASS 12 COMMERCE.</h2>
+          <p>
+            I built <strong>vidvisual</strong>, a freemium SaaS, from a no-code prototype into a full Next.js app deployed on Vercel, and I engineer autonomous AI automations that run on their own. Now working toward my first paying client.
+          </p>
+          <p class="hero-status-note">
+            <i data-lucide="check-circle-2"></i>
+            Open to internships, freelance projects, and partnerships in AI, tech, and marketing.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions">
+            <a href="Ali_Malek_Resume.pdf" download="Ali_Malek_Resume.pdf" class="btn btn-primary hero-btn">
+              <i data-lucide="download"></i>
+              <span>Download Resume (PDF)</span>
+            </a>
+            <a href="#ventures" class="btn btn-secondary hero-btn">
+              <span>Explore Ventures</span>
+              <i data-lucide="arrow-down"></i>
+            </a>
+          </div>
+
+          <div class="hero-signature-wrap">
+            <div class="hero-signature">Ali Malek</div>
+            <span class="sig-title">Founder, vidvisual.xyz</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right-side graphic displaying interactive blossom canvas + photo -->
+      <div class="hero-right">
+        <div class="glass-portrait-frame">
+          <div class="rotating-badge">
+            <svg viewBox="0 0 100 100" class="badge-svg">
+              <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+              <text font-family="Oswald" font-size="8.2" letter-spacing="1.4">
+                <textPath href="#circlePath" fill="#0f172a">
+                  • FOUNDER OF VIDVISUAL • AI PRODUCT BUILDER
+                </textPath>
+              </text>
+            </svg>
+            <div class="badge-center-star">
+              <i data-lucide="star"></i>
+            </div>
+          </div>
+
+          <!-- Canvas focal point circle with Ali's extracted photo and petal orbit ring -->
+          <div class="gravity-portal">
+            <div class="orbiting-ring"></div>
+            <div class="orbiting-ring-inner"></div>
+            
+            <div class="portal-portrait-container">
+              <img src="portrait.jpg" class="portal-portrait" alt="Ali Malek" onerror="this.style.display='none'; document.getElementById('portal-fallback').style.display='flex';">
+              <div id="portal-fallback" class="portal-fallback-monogram" style="display: none;">AM</div>
+            </div>
+
+            <div class="portal-floating-tag">
+              <span class="tag-dot"></span>
+              <span>Ali Malek · 16 y/o</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRACTION & PROOF OF WORK METRICS -->
+    <section class="metrics-section" id="metrics">
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-top">
+            <i data-lucide="users"></i>
+            <span class="metric-trend">+20/day</span>
+          </div>
+          <span class="metric-num">~20</span>
+          <span class="metric-label">Daily Visitors to vidvisual</span>
+          <p class="metric-sub">Organic traffic to freemium SaaS</p>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-top">
+            <i data-lucide="award"></i>
+            <span class="metric-trend">Verified</span>
+          </div>
+          <span class="metric-num">17</span>
+          <span class="metric-label">Professional Certifications</span>
+          <p class="metric-sub">Google, Meta, Saylor, HP, LinkedIn</p>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-top">
+            <i data-lucide="trending-up"></i>
+            <span class="metric-trend">Building in Public</span>
+          </div>
+          <span class="metric-num">20 - 100</span>
+          <span class="metric-label">Views Per Post on X</span>
+          <p class="metric-sub">Active tech builder community</p>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-top">
+            <i data-lucide="book-open"></i>
+            <span class="metric-trend">2-20 pages/day</span>
+          </div>
+          <span class="metric-num">15+</span>
+          <span class="metric-label">Books Read This Year</span>
+          <p class="metric-sub">Lifelong learning & daily discipline</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VENTURES & EXPERIENCE SECTION -->
+    <section class="work-section" id="ventures">
+      <div class="section-header">
+        <div>
+          <span class="section-eyebrow">PORTFOLIO OF SHIPPED PRODUCTS</span>
+          <h2 class="section-title">VENTURES & EXPERIENCE</h2>
+        </div>
+        <a href="https://github.com/Alimalek092" target="_blank" rel="noopener noreferrer" class="view-all-link">
+          <span>VIEW GITHUB REPOSITORIES</span>
+          <i data-lucide="arrow-up-right"></i>
+        </a>
+      </div>
+      
+      <div class="work-grid">
+        
+        <!-- Venture 01: vidvisual -->
+        <div class="project-card featured-venture">
+          <div class="project-header">
+            <div class="venture-tag-group">
+              <span class="venture-badge primary">FLAGSHIP SAAS</span>
+              <span class="venture-badge status">PRESENT</span>
+            </div>
+            <a href="https://vidvisual.xyz" target="_blank" rel="noopener noreferrer" class="external-card-btn" title="Visit vidvisual.xyz">
+              <i data-lucide="external-link"></i>
+            </a>
+          </div>
+
+          <div class="project-info">
+            <span class="proj-num">01</span>
+            <div class="proj-text">
+              <h3>vidvisual</h3>
+              <span class="proj-role">Founder & Product Builder</span>
+            </div>
+          </div>
+
+          <p class="project-desc">
+            Built and launched a freemium SaaS with a real backend, authentication and APIs. Rebuilt from a no-code prototype into a production Next.js application deployed on Vercel. Brings in ~20 visitors daily, working toward the first paying client, and builds in public on X and LinkedIn.
+          </p>
+
+          <div class="tech-pills">
+            <span class="tech-pill">Next.js</span>
+            <span class="tech-pill">Vercel</span>
+            <span class="tech-pill">APIs & Auth</span>
+            <span class="tech-pill">GitHub</span>
+            <span class="tech-pill">Freemium SaaS</span>
+          </div>
+
+          <div class="mockup-container">
+            <div class="browser-frame">
+              <div class="browser-header">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <span class="browser-url">vidvisual.xyz</span>
+              </div>
+              <div class="browser-body mockup-vidvisual">
+                <div class="mockup-hero">
+                  <span class="mini-tag">AI Video Creator</span>
+                  <h4>Transform ideas into visual assets</h4>
+                  <div class="mock-line-group">
+                    <span class="mock-line wide"></span>
+                    <span class="mock-line"></span>
+                  </div>
+                  <div class="mockup-btn-row">
+                    <span class="mockup-btn primary">Start Free</span>
+                    <span class="mockup-btn outline">Learn More</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Venture 02: AliOS -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="venture-badge automation">AI AUTOMATION</span>
+          </div>
+
+          <div class="project-info">
+            <span class="proj-num">02</span>
+            <div class="proj-text">
+              <h3>AliOS</h3>
+              <span class="proj-role">Personal AI Operating System</span>
+            </div>
+          </div>
+
+          <p class="project-desc">
+            Built an autonomous operating system leveraging Make.com, Telegram bots, Google Gemini LLM, and Google Sheets. Seamlessly ties instant messaging, AI synthesis, and live spreadsheet databases into one unified automated workflow.
+          </p>
+
+          <div class="tech-pills">
+            <span class="tech-pill">Make.com</span>
+            <span class="tech-pill">Gemini AI</span>
+            <span class="tech-pill">Telegram Bot</span>
+            <span class="tech-pill">Google Sheets</span>
+          </div>
+
+          <div class="mockup-container">
+            <div class="workflow-frame">
+              <div class="workflow-node"><i data-lucide="send"></i><span>Telegram</span></div>
+              <div class="workflow-arrow"><i data-lucide="arrow-right"></i></div>
+              <div class="workflow-node highlight"><i data-lucide="cpu"></i><span>Gemini LLM</span></div>
+              <div class="workflow-arrow"><i data-lucide="arrow-right"></i></div>
+              <div class="workflow-node"><i data-lucide="table"></i><span>Sheets</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Venture 03: AI Market Digest -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="venture-badge automation">INTELLIGENCE PIPELINE</span>
+          </div>
+
+          <div class="project-info">
+            <span class="proj-num">03</span>
+            <div class="proj-text">
+              <h3>AI Market Digest</h3>
+              <span class="proj-role">Weekly Intelligence Automation</span>
+            </div>
+          </div>
+
+          <p class="project-desc">
+            Architected an automated weekly Monday AI market briefing: continuously pulls relevant tech RSS feeds, synthesizes market trends with an LLM, and delivers the formatted executive digest straight to Gmail inbox every Monday morning.
+          </p>
+
+          <div class="tech-pills">
+            <span class="tech-pill">RSS Scraper</span>
+            <span class="tech-pill">LLM Prompting</span>
+            <span class="tech-pill">Gmail API</span>
+            <span class="tech-pill">Make.com</span>
+          </div>
+
+          <div class="mockup-container">
+            <div class="email-mockup-frame">
+              <div class="email-header">
+                <i data-lucide="mail"></i>
+                <span>Weekly AI Digest • Delivered Monday</span>
+              </div>
+              <div class="email-body">
+                <span class="email-line title"></span>
+                <span class="email-line"></span>
+                <span class="email-line short"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Venture 04: Nagina Shoes & Co. -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="venture-badge b2b">B2B WHOLESALE CLIENT</span>
+          </div>
+
+          <div class="project-info">
+            <span class="proj-num">04</span>
+            <div class="proj-text">
+              <h3>Nagina Shoes & Co.</h3>
+              <span class="proj-role">Freelance Video Creator</span>
+            </div>
+          </div>
+
+          <p class="project-desc">
+            Created animated product presentation videos for a wholesale B2B footwear enterprise. Tailored 3D product animations used directly in client pitch meetings to convert regional wholesale buyers.
+          </p>
+
+          <div class="tech-pills">
+            <span class="tech-pill">Animated Video</span>
+            <span class="tech-pill">Product Demo</span>
+            <span class="tech-pill">B2B Wholesale</span>
+            <span class="tech-pill">Client Delivery</span>
+          </div>
+
+          <div class="mockup-container">
+            <div class="video-mockup-frame">
+              <div class="video-play-btn"><i data-lucide="play"></i></div>
+              <span class="video-caption">B2B Wholesale Footwear Showcase</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS & CAPABILITIES SECTION -->
+    <section class="details-section" id="skills">
+      <div class="section-full-header">
+        <span class="section-eyebrow">CORE COMPETENCIES</span>
+        <h2 class="section-title">SKILLS & EXPERTISE</h2>
+        <p class="section-sub">A multidisciplinary stack spanning cutting-edge AI pipelines, full-stack web development, and foundational business acumen.</p>
+      </div>
+
+      <div class="skills-grid-modern">
+        <!-- Category 1 -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <div class="cat-icon-badge"><i data-lucide="sparkles"></i></div>
+            <h3>AI Tools & Prompt Workflows</h3>
+          </div>
+          <p>Prompt engineering, LLM chain workflows, context optimization, and generative AI tool integration.</p>
+          <div class="cat-tags">
+            <span>Gemini API</span>
+            <span>ChatGPT</span>
+            <span>Prompt Architecture</span>
+            <span>Generative AI Studio</span>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <div class="cat-icon-badge"><i data-lucide="workflow"></i></div>
+            <h3>Autonomous Automations</h3>
+          </div>
+          <p>Complex multi-step workflow automation without manual intervention, webhooks, and data pipelines.</p>
+          <div class="cat-tags">
+            <span>Make.com</span>
+            <span>Telegram Bots</span>
+            <span>Google Sheets Integration</span>
+            <span>RSS Feeds</span>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <div class="cat-icon-badge"><i data-lucide="code-2"></i></div>
+            <h3>Product Building & Code</h3>
+          </div>
+          <p>Shipping real, functional web applications with modern frameworks, version control, and cloud hosting.</p>
+          <div class="cat-tags">
+            <span>Next.js</span>
+            <span>React</span>
+            <span>GitHub</span>
+            <span>Vercel</span>
+            <span>REST APIs</span>
+          </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <div class="cat-icon-badge"><i data-lucide="video"></i></div>
+            <h3>Media & Digital Content</h3>
+          </div>
+          <p>Animated product showcase videos, graphic design fundamentals, and customer-facing visual marketing.</p>
+          <div class="cat-tags">
+            <span>Animated Product Video</span>
+            <span>Graphic Design Basics</span>
+            <span>Digital Marketing</span>
+            <span>Presentations</span>
+          </div>
+        </div>
+
+        <!-- Category 5 -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <div class="cat-icon-badge"><i data-lucide="bar-chart-3"></i></div>
+            <h3>Business, Finance & Data</h3>
+          </div>
+          <p>Commerce fundamentals, financial accounting principles, and data analysis through spreadsheets.</p>
+          <div class="cat-tags">
+            <span>Excel & Google Sheets</span>
+            <span>Formulas & Pivot Tables</span>
+            <span>Finance Basics</span>
+            <span>SEO Fundamentals</span>
+          </div>
+        </div>
+
+        <!-- Category 6 -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <div class="cat-icon-badge"><i data-lucide="shield-check"></i></div>
+            <h3>Cyber Security Fundamentals</h3>
+          </div>
+          <p>Certified in Star Cyber Secure Essentials (SCSE), network awareness, and safe architectural best practices.</p>
+          <div class="cat-tags">
+            <span>SCSE Certified</span>
+            <span>Data Privacy</span>
+            <span>API Security</span>
+            <span>Authentication</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 17 CERTIFICATIONS & TRAINING SECTION -->
+    <section class="certifications-section" id="certifications">
+      <div class="section-full-header">
+        <span class="section-eyebrow">VERIFIED CREDENTIALS</span>
+        <h2 class="section-title">CERTIFICATIONS & TRAINING</h2>
+        <p class="section-sub">17 completed and verified courses across AI, Technology, Business, Finance, and Marketing.</p>
+      </div>
+
+      <div class="cert-groups-container">
+        
+        <!-- Group 1: AI & Technology -->
+        <div class="cert-category-block">
+          <div class="cert-block-title">
+            <i data-lucide="cpu"></i>
+            <h3>AI & TECHNOLOGY (8 COURSES)</h3>
+          </div>
+          <div class="cert-items-grid">
+            
+            <div class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-issuer google">Google</span>
+                <span class="cert-date">Jul 2026</span>
+              </div>
+              <h4>Discover the Art of Prompting</h4>
+              <p>Google, via Coursera</p>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-issuer cursa">Cursa</span>
+                <span class="cert-date">May 2026</span>
+              </div>
+              <h4>Google AI Essentials</h4>
+              <p>Cursa</p>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-issuer google">Google Cloud</span>
+                <span class="cert-date">May 2026</span>
+              </div>
+              <h4>Introduction to Generative AI Studio</h4>
+              <p>Google Cloud, via Simplilearn SkillUP</p>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-issuer be10x">be10X</span>
+                <span class="cert-date">May 2026</span>
+              </div>
+              <h4>AI Tools & ChatGPT Workshop</h4>
+              <p>be10X</p>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-issuer linkedin">LinkedIn</span>
+                <span class="cert-date">May 2026</span>
+              </div>
+              <h4>Everyday AI Concepts</h4>
+              <p>LinkedIn Learning</p>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-issuer cursa">Technology Channel</span>
+                <span class="cert-date">Apr 2026</span>
+              </div>
+              <h4>Basic AI Course</h4>
+              <p>Technology Channel</p>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-issuer meta">Meta</span>
+                <span class="cert-date">Aug 2026</span>
+              </div>
+              <h4>Introduction to Android Mobile App Dev</h4>
+              <p>Meta, via Coursera</p>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-issuer iant">IANT / Star</span>
+                <span class="cert-date">2023–24</span>
+              </div>
+              <h4>Star Cyber Secure Essentials (SCSE)</h4>
+              <p>IANT with Star Certification, USA</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Group 2: Business & Finance -->
+        <div class="cert-category-block">
+          <div class="cert-block-title">
+            <i data-lucide="briefcase"></i>
+            <h3>BUSINESS & FINANCE (5 COURSES)</h3>
+          </div>
+          <div class="cert-items-grid">
+            
+            <div class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-issuer saylor">Saylor University</span>
+                <span class="cert-date">May 2026</span>
+              </div>
+              <h4>BUS101: Introduction to Business</h4>
+              <p>Saylor University</p>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-issuer cursa">Cursa</span>
+                <span class="cert-date">May 2026</span>
+              </div>
+              <h4>Technology Entrepreneurship</h4>
+              <p>Cursa</p>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-issuer simplilearn">Simplilearn</span>
+                <span class="cert-date">Jun 2026</span>
+              </div>
+              <h4>Introduction to Finance and Accounting</h4>
+              <p>Simplilearn SkillUP</p>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-issuer hp">HP LIFE</span>
+                <span class="cert-date">May 2026</span>
+              </div>
+              <h4>Basics of Finance</h4>
+              <p>HP LIFE</p>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-issuer cursa">Cursa</span>
+                <span class="cert-date">May 2026</span>
+              </div>
+              <h4>Introduction to Accounting</h4>
+              <p>Cursa</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Group 3: Marketing, Data & Communication -->
+        <div class="cert-category-block">
+          <div class="cert-block-title">
+            <i data-lucide="megaphone"></i>
+            <h3>MARKETING, DATA & COMMUNICATION (4 COURSES)</h3>
+          </div>
+          <div class="cert-items-grid">
+            
+            <div class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-issuer cursa">Cursa</span>
+                <span class="cert-date">May 2026</span>
+              </div>
+              <h4>SEO for Beginners</h4>
+              <p>Cursa</p>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-issuer cursa">Cursa</span>
+                <span class="cert-date">May 2026</span>
+              </div>
+              <h4>Excel for Beginners: Formulas & Pivot Tables</h4>
+              <p>Cursa</p>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-issuer hp">HP LIFE</span>
+                <span class="cert-date">May 2026</span>
+              </div>
+              <h4>Effective Presentations</h4>
+              <p>HP LIFE</p>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-issuer cursa">Cursa</span>
+                <span class="cert-date">May 2026</span>
+              </div>
+              <h4>English Grammar for Beginners (A1)</h4>
+              <p>Cursa</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cert-footer-note">
+        <i data-lucide="check-circle"></i>
+        <span>Certificates carry verification IDs or QR codes from each issuer. Originals available on request.</span>
+      </div>
+    </section>
+
+    <!-- EDUCATION & BEYOND WORK SECTION -->
+    <section class="personal-growth-section">
+      <div class="growth-grid">
+        
+        <!-- Education -->
+        <div class="growth-card">
+          <div class="growth-header">
+            <div class="growth-icon"><i data-lucide="graduation-cap"></i></div>
+            <div>
+              <span class="growth-eyebrow">ACADEMIC JOURNEY</span>
+              <h3>EDUCATION</h3>
+            </div>
+          </div>
+          
+          <div class="edu-item">
+            <div class="edu-top">
+              <h4>Class 12, Commerce (HSC)</h4>
+              <span class="edu-badge pending">Appearing 2027</span>
+            </div>
+            <p class="edu-school">F.D. English High School, Ahmedabad · Gujarat Board</p>
+            <span class="edu-target">Academic Target: 85%+</span>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-top">
+              <h4>Class 10 (SSC)</h4>
+              <span class="edu-badge completed">Completed · 68%</span>
+            </div>
+            <p class="edu-school">Gujarat Board</p>
+          </div>
+        </div>
+
+        <!-- Beyond Work -->
+        <div class="growth-card">
+          <div class="growth-header">
+            <div class="growth-icon"><i data-lucide="compass"></i></div>
+            <div>
+              <span class="growth-eyebrow">HABITS & MINDSET</span>
+              <h3>BEYOND WORK</h3>
+            </div>
+          </div>
+          
+          <div class="habit-item">
+            <div class="habit-top">
+              <i data-lucide="book-open"></i>
+              <h4>Daily Reading Habit</h4>
+            </div>
+            <p>Reads every single day without fail (2 to 20 pages). Has read and finished over <strong>15+ books this year</strong> covering startup strategy, product psychology, and economics.</p>
+          </div>
+
+          <div class="habit-item">
+            <div class="habit-top">
+              <i data-lucide="languages"></i>
+              <h4>Languages</h4>
+            </div>
+            <p>English, Hindi, and Gujarati (conversational fluency).</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 1-CLICK RESUME DOWNLOAD HERO SECTION -->
+    <section class="resume-download-section" id="resume">
+      <div class="resume-download-card">
+        <div class="resume-card-left">
+          <div class="resume-icon-badge">
+            <i data-lucide="file-check-2"></i>
+          </div>
+          <div>
+            <span class="resume-badge-tag">OFFICIAL 2-PAGE RESUME</span>
+            <h2 class="resume-card-title">DOWNLOAD ALI MALEK'S RESUME</h2>
+            <p class="resume-card-desc">
+              Get the complete, verified resume in PDF format detailing all 17 certifications, technical stacks, product metrics, and founder experience in one click.
+            </p>
+            <div class="resume-meta-pills">
+              <span><i data-lucide="file"></i> PDF Format (1.0 MB)</span>
+              <span><i data-lucide="shield-check"></i> Verified Credentials</span>
+              <span><i data-lucide="calendar"></i> Updated October 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-card-right">
+          <a href="Ali_Malek_Resume.pdf" download="Ali_Malek_Resume.pdf" class="btn btn-primary resume-dl-btn">
+            <i data-lucide="download"></i>
+            <span>Download PDF (1-Click)</span>
+          </a>
+          <a href="Ali_Malek_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary resume-view-btn">
+            <i data-lucide="eye"></i>
+            <span>View PDF in Browser</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & SOCIAL COMMAND CENTER -->
+    <section class="contact-section" id="contact">
+      <div class="contact-top">
+        <div class="contact-heading-group">
+          <span class="section-eyebrow">GET IN TOUCH</span>
+          <h2 class="contact-title">LET'S BUILD SOMETHING TOGETHER</h2>
+          <p class="contact-subhead">
+            Open to internships, freelance projects, AI automations, and tech partnerships. Whether you have a project in mind or want to collaborate, feel free to reach out directly.
+          </p>
+          <div class="contact-btn-row">
+            <a href="mailto:alimalek786225@gmail.com" class="btn btn-primary contact-cta-btn">
+              <i data-lucide="mail"></i>
+              <span>Send Me an Email</span>
+            </a>
+            <a href="https://wa.me/919558574155" target="_blank" rel="noopener noreferrer" class="btn btn-secondary contact-cta-btn">
+              <i data-lucide="message-circle"></i>
+              <span>WhatsApp Chat</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="contact-details-grid">
+          <div class="contact-info-card">
+            <i data-lucide="mail"></i>
+            <div class="contact-info-text">
+              <span class="info-label">Direct Email</span>
+              <a href="mailto:alimalek786225@gmail.com">alimalek786225@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <i data-lucide="phone"></i>
+            <div class="contact-info-text">
+              <span class="info-label">Phone / WhatsApp</span>
+              <a href="tel:+919558574155">+91 95585 74155</a>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <i data-lucide="map-pin"></i>
+            <div class="contact-info-text">
+              <span class="info-label">Location</span>
+              <span>Ahmedabad, Gujarat, India</span>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <i data-lucide="globe"></i>
+            <div class="contact-info-text">
+              <span class="info-label">Startup SaaS</span>
+              <a href="https://vidvisual.xyz" target="_blank" rel="noopener noreferrer">vidvisual.xyz</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Links Bar -->
+      <div class="social-links-bar">
+        <span class="social-bar-label">CONNECT ONLINE:</span>
+        <div class="social-pill-group">
+          <a href="https://linkedin.com/in/ali-malek-7753a72a3" target="_blank" rel="noopener noreferrer" class="social-pill">
+            <i data-lucide="linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://x.com/Ali_Mlk092" target="_blank" rel="noopener noreferrer" class="social-pill">
+            <i data-lucide="twitter"></i>
+            <span>X (Twitter)</span>
+          </a>
+          <a href="https://github.com/Alimalek092" target="_blank" rel="noopener noreferrer" class="social-pill">
+            <i data-lucide="github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://youtube.com/@alimalek092" target="_blank" rel="noopener noreferrer" class="social-pill">
+            <i data-lucide="youtube"></i>
+            <span>YouTube</span>
+          </a>
+        </div>
+      </div>
+
+      <hr class="footer-divider">
+
+      <footer class="site-footer">
+        <div class="footer-left">
+          <span class="logo-badge">AM</span>
+          <div class="footer-slogan-wrap">
+            <span class="footer-name">ALI MALEK</span>
+            <span class="footer-slogan">SHIPPING REAL PRODUCTS · COMMERCE & AI</span>
+          </div>
+        </div>
+        <div class="footer-right">
+          <span>&copy; 2026 ALI MALEK. ALL RIGHTS RESERVED.</span>
+          <i data-lucide="sparkles" class="star-icon"></i>
+        </div>
+      </footer>
+    </section>
+    
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
